@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Laptop Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lapture</div>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">☰</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="products.html">Products <span style="font-size: 0.8em;">▼</span></a>
+                    <ul class="dropdown">
+                        <li><a href="premium .html">Premium Laptops</a></li>
+                        <li><a href="gaming.html">Gaming Laptops</a></li>
+                        <li><a href="bussiness.html">Business Laptops</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                </div>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </nav>
+    </header>
+
+
+
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="premium-laptops">
+        <div class="container">
+            <div class="header">
+                <div class="section-title">
+                    <h2>Gaming Laptop Collection</h2>
+                    <p>The Lapture Gaming Laptop is built for serious gamers who demand high performance, stunning
+                        graphics, and ultra-fast response. Equipped with the latest processors, powerful GPUs,
+                        high-refresh-rate displays, and advanced cooling, it's your ultimate weapon for victory.</p>
+                </div>
+
+            </div>
+
+            <div class="laptops-grid">
+                <!-- Laptop 1 -->
+                <div class="laptop-card">
+                    <div class="laptop-image">
+                        <img src="img/gaming 1.jpeg" alt="MacBook Pro">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">ShadowFire G15</h3>
+                        <div class="laptop-specs">
+                            <span>L1 Max 12-core CPU</span>
+                            <span>32GB unified memory</span>
+                            <span>1TB SSD storage</span>
+                            <span>Dark, sleek design with RGB, built for FPS gaming.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 1,10,999/-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="1" data-name="ShadowFire G15"
+                                data-price="3499"
+                                data-image="https://www.meta.ai/prompt/9998273563591854?edit=596853130188865&imagine=nK2JtVUwZ8Z">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 2 -->
+                <div class="laptop-card">
+                    <div class="badge">Popular</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 2.jpeg" alt="Dell XPS">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">ThunderCore X17</h3>
+                        <div class="laptop-specs">
+                            <span>Intel Core i9-12900HK</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB NVMe SSD</span>
+                            <span>High-performance 17" laptop with dual-fan cooling and RTX GPU.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 99,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="2" data-name="ThunderCore X17"
+                                data-price="2799" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 3 -->
+                <div class="laptop-card">
+                    <div class="laptop-image">
+                        <img src="img/gaming 3.jpeg" alt="HP Spectre">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">BlazeStrike Z14</h3>
+                        <div class="laptop-specs">
+                            <span>Intel Core i7-1260P</span>
+                            <span>16GB LPDDR4x RAM</span>
+                            <span>1TB PCIe NVMe SSD</span>
+                            <span>Lightweight, fast-refresh screen, made for eSports.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 80,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="3" data-name="BlazeStrike Z14"
+                                data-price="1899" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 4 -->
+                <div class="laptop-card">
+                    <div class="badge">Limited</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 4.jpeg" alt="Asus ROG Zephyrus">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">TitanEdge G9</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>Rugged metal body with advanced thermal system</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 60,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="TitanEdge G9"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 5 -->
+                <div class="laptop-card">
+                    <div class="badge">Limited</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 5.jpeg" alt="Asus ROG Zephyrus">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">WarZone F16</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>AMD Ryzen powered, optimized for AAA games.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 1,45,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="WarZone F16"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 6 -->
+                <div class="laptop-card">
+                    <div class="badge">Limited</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 6.jpeg" alt="Asus ROG Zephyrus">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">StormBeast K13</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>Military-grade design with mechanical keyboard.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 1,25,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="StormBeast K13"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 7 -->
+                <div class="laptop-card">
+                    <div class="badge">Popular</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 7.jpeg" alt="Asus ROG Zephyrus">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">InfernoBlade X11</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>Massive power and storage, ideal for streamers.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 42,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="InfernoBlade X11"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 8 -->
+                <div class="laptop-card">
+                    <div class="badge">Popular</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 8.jpeg" alt="ReaperOne M18">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">ReaperOne M18</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>Razor-sharp visuals with 240Hz display, fast SSD.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 95,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="ReaperOne M18"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 9 -->
+                <div class="laptop-card">
+                    <div class="badge">Popular</div>
+                    <div class="laptop-image">
+                        <img src="img/gaming 9.jpeg" alt="ROG L9 G50 PRO">
+                    </div>
+                    <div class="laptop-info">
+                        <div class="laptop-brand">Lapture</div>
+                        <h3 class="laptop-name">ROG L9 G50 PRO</h3>
+                        <div class="laptop-specs">
+                            <span>AMD Ryzen 9 6900HS</span>
+                            <span>32GB DDR5 RAM</span>
+                            <span>1TB PCIe SSD</span>
+                            <span>Slim gaming ultrabook with AI performance tuning.</span>
+                        </div>
+                        <div class="laptop-price">&#8377; 98,999\-</div>
+                        <div class="laptop-actions">
+
+                            <button class="btn btn-cart add-to-cart" data-id="4" data-name="ROG L9 G50 PRO"
+                                data-price="2299" data-image="">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <button class="close-cart" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Cart items will be dynamically inserted here -->
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+        <div class="cart-summary" id="cartSummary" style="display: none;">
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span id="total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        Item added to cart!
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Lapture</h2>
+                <p><strong>Innovatings, Performance, Possibilities.</strong></p>
+                <p> Lapture Laptops are designed for modern users who demand power, style, and reliability. Whether
+                    you're a gamer, a creator, a student, or a business professional.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="premium .html">Premium Laptops</a></li>
+                    <li><a href="gaming.html">Gaming Laptops</a></li>
+                    <li><a href="bussiness.html">Bussiness Laptops</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-newsletter">
+                <h4>Subscribe</h4>
+                <form id="newsletterForm">
+                    <input type="email" id="newsletterEmail" placeholder="Your email" required>
+                    <button type="submit">Join</button>
+                </form>
+                <p id="newsletterMessage" style="margin-top: 0.5rem;"></p>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lapture Laptops. All rights reserved. <br><strong>fuzailscript.in</strong></p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartCount = document.getElementById('cartCount');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const notification = document.getElementById('notification');
+            const cartIcon = document.getElementById('cartIcon');
+            const cartSidebar = document.getElementById('cartSidebar');
+            const closeCart = document.getElementById('closeCart');
+            const cartItemsContainer = document.getElementById('cartItemsContainer');
+            const cartSummary = document.getElementById('cartSummary');
+            const subtotalElement = document.getElementById('subtotal');
+            const totalElement = document.getElementById('total');
+            const overlay = document.getElementById('overlay');
+
+            let cartItems = [];
+            let count = 0;
+
+            // Load cart from localStorage if available
+            if (localStorage.getItem('cart')) {
+                cartItems = JSON.parse(localStorage.getItem('cart'));
+                count = cartItems.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = count;
+                updateCartDisplay();
+            }
+
+            // Add to cart functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const id = this.getAttribute('data-id');
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const image = this.getAttribute('data-image');
+
+                    // Check if item already exists in cart
+                    const existingItem = cartItems.find(item => item.id === id);
+
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cartItems.push({
+                            id: id,
+                            name: name,
+                            price: price,
+                            image: image,
+                            quantity: 1
+                        });
+                    }
+
+                    count++;
+                    cartCount.textContent = count;
+
+                    // Save to localStorage
+                    localStorage.setItem('cart', JSON.stringify(cartItems));
+
+                    // Update cart display
+                    updateCartDisplay();
+
+                    // Show notification
+                    notification.textContent = `${name} added to cart!`;
+                    notification.classList.add('show');
+
+                    // Hide notification after 3 seconds
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 3000);
+
+                    // Button feedback
+                    this.textContent = 'Added!';
+                    this.style.backgroundColor = '#27ae60';
+
+                    setTimeout(() => {
+                        this.textContent = 'Add to Cart';
+                        this.style.backgroundColor = '#f5f5dc';
+                    }, 2000);
+                });
+            });
+
+            // Toggle cart sidebar
+            cartIcon.addEventListener('click', function () {
+                cartSidebar.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeCart.addEventListener('click', function () {
+                cartSidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            overlay.addEventListener('click', function () {
+                cartSidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            // Update cart display
+            function updateCartDisplay() {
+                if (cartItems.length === 0) {
+                    cartItemsContainer.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+                    cartSummary.style.display = 'none';
+                    return;
+                }
+
+                cartItemsContainer.innerHTML = '';
+                let subtotal = 0;
+
+                cartItems.forEach(item => {
+                    subtotal += item.price * item.quantity;
+
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item';
+                    cartItemElement.innerHTML = `
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">$${item.price.toLocaleString()}</div>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn decrease" data-id="${item.id}">-</button>
+                                <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
+                                <button class="quantity-btn increase" data-id="${item.id}">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-item" data-id="${item.id}"><i class="fa-solid fa-xmark"></i></button>
+                    `;
+
+                    cartItemsContainer.appendChild(cartItemElement);
+                });
+
+                // Add event listeners to quantity buttons
+                document.querySelectorAll('.decrease').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const id = this.getAttribute('data-id');
+                        updateQuantity(id, -1);
+                    });
+                });
+
+                document.querySelectorAll('.increase').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const id = this.getAttribute('data-id');
+                        updateQuantity(id, 1);
+                    });
+                });
+
+                document.querySelectorAll('.quantity-input').forEach(input => {
+                    input.addEventListener('change', function () {
+                        const id = this.getAttribute('data-id');
+                        const newQuantity = parseInt(this.value);
+                        if (newQuantity > 0) {
+                            updateQuantity(id, newQuantity, true);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.remove-item').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const id = this.getAttribute('data-id');
+                        removeItem(id);
+                    });
+                });
+
+                // Update summary
+                subtotalElement.textContent = `$${subtotal.toLocaleString()}`;
+                totalElement.textContent = `$${subtotal.toLocaleString()}`;
+                cartSummary.style.display = 'block';
+            }
+
+            // Update quantity function
+            function updateQuantity(id, change, setExact = false) {
+                const item = cartItems.find(item => item.id === id);
+                if (!item) return;
+
+                if (setExact) {
+                    count += change - item.quantity;
+                    item.quantity = change;
+                } else {
+                    const newQuantity = item.quantity + change;
+                    if (newQuantity < 1) return;
+                    item.quantity = newQuantity;
+                    count += change;
+                }
+
+                cartCount.textContent = count;
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+                updateCartDisplay();
+            }
+
+            // Remove item function
+            function removeItem(id) {
+                const itemIndex = cartItems.findIndex(item => item.id === id);
+                if (itemIndex === -1) return;
+
+                count -= cartItems[itemIndex].quantity;
+                cartItems.splice(itemIndex, 1);
+
+                cartCount.textContent = count;
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+                updateCartDisplay();
+            }
+        });
+
+        // Add this code right before the closing 
+        //  tag in your existing code
+
+        // Checkout functionality
+        document.querySelector('.checkout-btn').addEventListener('click', function () {
+            // Hide cart sidebar
+            cartSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+
+            // Create checkout overlay
+            const checkoutOverlay = document.createElement('div');
+            checkoutOverlay.className = 'checkout-overlay';
+            checkoutOverlay.style.position = 'fixed';
+            checkoutOverlay.style.top = '0';
+            checkoutOverlay.style.left = '0';
+            checkoutOverlay.style.width = '100%';
+            checkoutOverlay.style.height = '100%';
+            checkoutOverlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            checkoutOverlay.style.display = 'flex';
+            checkoutOverlay.style.justifyContent = 'center';
+            checkoutOverlay.style.alignItems = 'center';
+            checkoutOverlay.style.zIndex = '1000';
+
+            // Create checkout container
+            const checkoutContainer = document.createElement('div');
+            checkoutContainer.className = 'checkout-container';
+            checkoutContainer.style.backgroundColor = '#fff';
+            checkoutContainer.style.padding = '2rem';
+            checkoutContainer.style.borderRadius = '8px';
+            checkoutContainer.style.maxWidth = '500px';
+            checkoutContainer.style.width = '90%';
+
+            // Add content to checkout container
+            checkoutContainer.innerHTML = `
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">Checkout</h2>
+        <div class="checkout-steps">
+            <div class="step active" id="paymentStep">
+                <h3>Payment Method</h3>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="credit" checked>
+                        <i class="fa-solid fa-credit-card"></i> Credit Card
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="paypal">
+                        <i class="fa-brands fa-paypal"></i> PayPal
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="crypto">
+                       <i class="fa-solid fa-money-bill"></i> Cash on Delivery
+                    </label>
+                </div>
+                <div class="credit-card-details" id="creditCardDetails">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label>Expiration Date</label>
+                        <input type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="text" placeholder="123">
+                    </div>
+                    <div class="form-group">
+                        <label>Name on Card</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                </div>
+                <button class="btn btn-pay" id="payNowBtn">Pay Now</button>
+            </div>
+            <div class="step" id="confirmationStep" style="display: none;">
+                <div class="success-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Order Placed Successfully!</h3>
+                <p>Thank you for your purchase. Your order has been confirmed.</p>
+                <p>Order ID: #${Math.floor(100000 + Math.random() * 900000)}</p>
+                <button class="btn btn-done" id="doneBtn">Done</button>
+            </div>
+        </div>
+    `;
+
+            checkoutOverlay.appendChild(checkoutContainer);
+            document.body.appendChild(checkoutOverlay);
+            document.body.style.overflow = 'hidden';
+
+            // Style the payment options
+            const paymentOptions = checkoutContainer.querySelectorAll('.payment-option');
+            paymentOptions.forEach(option => {
+                option.style.display = 'block';
+                option.style.padding = '0.8rem';
+                option.style.margin = '0.5rem 0';
+                option.style.border = '1px solid #ddd';
+                option.style.borderRadius = '4px';
+                option.style.cursor = 'pointer';
+            });
+
+            // Handle payment method change
+            const paymentMethods = checkoutContainer.querySelectorAll('input[name="payment"]');
+            const creditCardDetails = checkoutContainer.querySelector('#creditCardDetails');
+
+            paymentMethods.forEach(method => {
+                method.addEventListener('change', function () {
+                    if (this.value === 'credit') {
+                        creditCardDetails.style.display = 'block';
+                    } else {
+                        creditCardDetails.style.display = 'none';
+                    }
+                });
+            });
+
+            // Handle pay now button click
+            checkoutContainer.querySelector('#payNowBtn').addEventListener('click', function () {
+                // Show confirmation step
+                checkoutContainer.querySelector('#paymentStep').style.display = 'none';
+                checkoutContainer.querySelector('#confirmationStep').style.display = 'block';
+
+                // Clear cart
+                cartItems = [];
+                count = 0;
+                cartCount.textContent = '0';
+                localStorage.removeItem('cart');
+            });
+
+            // Handle done button click
+            checkoutContainer.querySelector('#doneBtn').addEventListener('click', function () {
+                document.body.removeChild(checkoutOverlay);
+                document.body.style.overflow = 'auto';
+            });
+
+            // Add some basic styles for form elements
+            const style = document.createElement('style');
+            style.textContent = `
+        .checkout-container .form-group {
+            margin-bottom: 1rem;
+        }
+        .checkout-container .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .checkout-container .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .checkout-container .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .checkout-container .btn:hover {
+            background-color: #333;
+        }
+        .success-icon {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .success-icon i {
+            font-size: 4rem;
+            color: #27ae60;
+        }
+        .checkout-container h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .checkout-container p {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+
+</html>
