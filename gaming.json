@@ -1,0 +1,193 @@
+{
+  "gaming_laptops": [
+    {
+      "id": 1,
+      "brand": "Lapture",
+      "name": "ShadowFire G15",
+      "image": "img/gaming 1.jpeg",
+      "specs": [
+        "L1 Max 12-core CPU",
+        "32GB unified memory",
+        "1TB SSD storage",
+        "Dark, sleek design with RGB, built for FPS gaming."
+      ],
+      "price": "₹1,10,999/-",
+      "price_value": 110999,
+      "badge": null,
+      "cart_data": {
+        "data-id": "1",
+        "data-name": "ShadowFire G15",
+        "data-price": "3499",
+        "data-image": "https://www.meta.ai/prompt/9998273563591854?edit=596853130188865&imagine=nK2JtVUwZ8Z"
+      }
+    },
+    {
+      "id": 2,
+      "brand": "Lapture",
+      "name": "ThunderCore X17",
+      "image": "img/gaming 2.jpeg",
+      "specs": [
+        "Intel Core i9-12900HK",
+        "32GB DDR5 RAM",
+        "1TB NVMe SSD",
+        "High-performance 17\" laptop with dual-fan cooling and RTX GPU."
+      ],
+      "price": "₹99,999/-",
+      "price_value": 99999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "2",
+        "data-name": "ThunderCore X17",
+        "data-price": "2799",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 3,
+      "brand": "Lapture",
+      "name": "BlazeStrike Z14",
+      "image": "img/gaming 3.jpeg",
+      "specs": [
+        "Intel Core i7-1260P",
+        "16GB LPDDR4x RAM",
+        "1TB PCIe NVMe SSD",
+        "Lightweight, fast-refresh screen, made for eSports."
+      ],
+      "price": "₹80,999/-",
+      "price_value": 80999,
+      "badge": null,
+      "cart_data": {
+        "data-id": "3",
+        "data-name": "BlazeStrike Z14",
+        "data-price": "1899",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 4,
+      "brand": "Lapture",
+      "name": "TitanEdge G9",
+      "image": "img/gaming 4.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Rugged metal body with advanced thermal system"
+      ],
+      "price": "₹60,999/-",
+      "price_value": 60999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "TitanEdge G9",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 5,
+      "brand": "Lapture",
+      "name": "WarZone F16",
+      "image": "img/gaming 5.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Ryzen powered, optimized for AAA games."
+      ],
+      "price": "₹1,45,999/-",
+      "price_value": 145999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "WarZone F16",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 6,
+      "brand": "Lapture",
+      "name": "StormBeast K13",
+      "image": "img/gaming 6.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Military-grade design with mechanical keyboard."
+      ],
+      "price": "₹1,25,999/-",
+      "price_value": 125999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "StormBeast K13",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 7,
+      "brand": "Lapture",
+      "name": "InfernoBlade X11",
+      "image": "img/gaming 7.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Massive power and storage, ideal for streamers."
+      ],
+      "price": "₹42,999/-",
+      "price_value": 42999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "InfernoBlade X11",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 8,
+      "brand": "Lapture",
+      "name": "ReaperOne M18",
+      "image": "img/gaming 8.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Razor-sharp visuals with 240Hz display, fast SSD."
+      ],
+      "price": "₹95,999/-",
+      "price_value": 95999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "ReaperOne M18",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 9,
+      "brand": "Lapture",
+      "name": "ROG L9 G50 PRO",
+      "image": "img/gaming 9.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Slim gaming ultrabook with AI performance tuning."
+      ],
+      "price": "₹98,999/-",
+      "price_value": 98999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "ROG L9 G50 PRO",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    }
+  ]
+}

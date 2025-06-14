@@ -1,0 +1,193 @@
+{
+  "business_laptops": [
+    {
+      "id": 1,
+      "brand": "Lapture",
+      "name": "ZenCore B13",
+      "image": "img/bussiness 1.jpeg",
+      "specs": [
+        "Intel Core i5 13th Gen",
+        "32GB unified memory",
+        "1TB SSD storage",
+        "Balanced power for multitasking and secure enterprise work."
+      ],
+      "price": "₹80,999/-",
+      "price_value": 80999,
+      "badge": null,
+      "cart_data": {
+        "data-id": "1",
+        "data-name": "ZenCore B13",
+        "data-price": "3499",
+        "data-image": "https://www.meta.ai/prompt/9998273563591854?edit=596853130188865&imagine=nK2JtVUwZ8Z"
+      }
+    },
+    {
+      "id": 2,
+      "brand": "Lapture",
+      "name": "OfficeMate X12",
+      "image": "img/bussiness 2.jpeg",
+      "specs": [
+        "Intel Core i3 12th Gen",
+        "32GB DDR5 RAM",
+        "1TB NVMe SSD",
+        "Budget-friendly, perfect for everyday office tasks and web apps."
+      ],
+      "price": "₹49,999/-",
+      "price_value": 49999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "2",
+        "data-name": "OfficeMate X12",
+        "data-price": "2799",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 3,
+      "brand": "Lapture",
+      "name": "WorkPro V15",
+      "image": "img/bussiness 3.jpeg",
+      "specs": [
+        "AMD Ryzen 5 7530U",
+        "16GB LPDDR4x RAM",
+        "1TB PCIe NVMe SSD",
+        "Smooth performance with extended battery life for hybrid workers."
+      ],
+      "price": "₹30,999/-",
+      "price_value": 30999,
+      "badge": null,
+      "cart_data": {
+        "data-id": "3",
+        "data-name": "WorkPro V15",
+        "data-price": "1899",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 4,
+      "brand": "Lapture",
+      "name": "BizLite E10",
+      "image": "img/bussiness 4.jpeg",
+      "specs": [
+        "Intel Core i5 11th Gen",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Lightweight and responsive for mobile professionals."
+      ],
+      "price": "₹25,999/-",
+      "price_value": 25999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "BizLite E10",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 5,
+      "brand": "Lapture",
+      "name": "NotePrime M11",
+      "image": "img/bussiness 5.jpeg",
+      "specs": [
+        "Intel Core i7 12th Gen (vPro)",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Enterprise-grade security with fast performance."
+      ],
+      "price": "₹56,999/-",
+      "price_value": 56999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "NotePrime M11",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 6,
+      "brand": "Lapture",
+      "name": "FlexPro S2",
+      "image": "img/bussiness 6.jpeg",
+      "specs": [
+        "AMD Ryzen 7 7735U",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "2-in-1 capability with enhanced performance for design and note-taking."
+      ],
+      "price": "₹55,999/-",
+      "price_value": 55999,
+      "badge": "Limited",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "FlexPro S2",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 7,
+      "brand": "Lapture",
+      "name": "CoreEdge B11",
+      "image": "img/bussiness 7.jpeg",
+      "specs": [
+        "Intel Core i9 13th Gen",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "A powerhouse for senior executives handling large datasets."
+      ],
+      "price": "₹32,999/-",
+      "price_value": 32999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "CoreEdge B11",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 8,
+      "brand": "Lapture",
+      "name": "SecureEdge R14",
+      "image": "img/bussiness 8.jpeg",
+      "specs": [
+        "Intel Core i5 1240P",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "Snappy SSD speed and efficient CPU for smooth multitasking."
+      ],
+      "price": "₹65,999/-",
+      "price_value": 65999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "SecureEdge R14",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    },
+    {
+      "id": 9,
+      "brand": "Lapture",
+      "name": "ExecBook G17",
+      "image": "img/bussiness 9.jpeg",
+      "specs": [
+        "AMD Ryzen 5 PRO 6650U",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "A secure and reliable option for business continuity and IT management."
+      ],
+      "price": "₹78,999/-",
+      "price_value": 78999,
+      "badge": "Popular",
+      "cart_data": {
+        "data-id": "4",
+        "data-name": "ExecBook G17",
+        "data-price": "2299",
+        "data-image": ""
+      }
+    }
+  ]
+}

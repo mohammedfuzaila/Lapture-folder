@@ -1,0 +1,139 @@
+{
+  "laptops": [
+    {
+      "id": 1,
+      "brand": "Lapture",
+      "name": "Book Pro 16' L1 Max",
+      "image": "img/normal 1.jpeg",
+      "specs": [
+        "L1 Max 12-core CPU",
+        "32GB unified memory",
+        "1TB SSD storage",
+        "16-core GPU"
+      ],
+      "price": "₹69,999/-",
+      "price_value": 69999,
+      "badge": null
+    },
+    {
+      "id": 2,
+      "brand": "Lapture",
+      "name": "XPS 15 9520",
+      "image": "img/normal 2.jpeg",
+      "specs": [
+        "Intel Core i9-12900HK",
+        "32GB DDR5 RAM",
+        "1TB NVMe SSD",
+        "NVIDIA RTX 3050 Ti"
+      ],
+      "price": "₹89,999/-",
+      "price_value": 89999,
+      "badge": "Popular"
+    },
+    {
+      "id": 3,
+      "brand": "Lapture",
+      "name": "Spectre x360 14",
+      "image": "img/normal 3.jpeg",
+      "specs": [
+        "Intel Core i7-1260P",
+        "16GB LPDDR4x RAM",
+        "1TB PCIe NVMe SSD",
+        "Intel Iris Xe Graphics"
+      ],
+      "price": "₹50,999/-",
+      "price_value": 50999,
+      "badge": null
+    },
+    {
+      "id": 4,
+      "brand": "Lapture",
+      "name": "LOF Zephyrus G14",
+      "image": "img/normal 4.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹30,999/-",
+      "price_value": 30999,
+      "badge": "Limited"
+    },
+    {
+      "id": 5,
+      "brand": "Lapture",
+      "name": "LOF Zephyrus G17",
+      "image": "img/normal 5.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹25,999/-",
+      "price_value": 25999,
+      "badge": "Limited"
+    },
+    {
+      "id": 6,
+      "brand": "Lapture",
+      "name": "LOF L2 G19",
+      "image": "img/normal 6.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹19,999/-",
+      "price_value": 19999,
+      "badge": "Limited"
+    },
+    {
+      "id": 7,
+      "brand": "Lapture",
+      "name": "LOF Zephyrus G28 pro",
+      "image": "img/normal 7.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹75,999/-",
+      "price_value": 75999,
+      "badge": "Popular"
+    },
+    {
+      "id": 8,
+      "brand": "Lapture",
+      "name": "ROG L7 G29 pro",
+      "image": "img/normal 8.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹85,999/-",
+      "price_value": 85999,
+      "badge": "Popular"
+    },
+    {
+      "id": 9,
+      "brand": "Lapture",
+      "name": "ROG L9 G50 PRO",
+      "image": "img/normal 9.jpeg",
+      "specs": [
+        "AMD Ryzen 9 6900HS",
+        "32GB DDR5 RAM",
+        "1TB PCIe SSD",
+        "AMD Radeon RX 6800S"
+      ],
+      "price": "₹95,999/-",
+      "price_value": 95999,
+      "badge": "Popular"
+    }
+  ]
+}

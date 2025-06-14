@@ -707,7 +707,7 @@
     /* Cart Sidebar Styles */
     .cart-sidebar {
       position: fixed;
-      top: 0;
+      top: 66px;
       right: -400px;
       width: 400px;
       height: 100vh;
@@ -1132,9 +1132,9 @@
       top: 10px;
       left: 0;
       font-size: 1rem;
-      color: var(--text-light);
       pointer-events: none;
       transition: var(--transition);
+      padding: 5px;
     }
 
     .form-group .focus-border {
@@ -1214,7 +1214,7 @@
       border: none;
     }
 
-    label {
+    .form-group label {
       color: beige;
     }
 
@@ -1426,4 +1426,372 @@
   background-color: white;
   color: cadetblue;
   border: 1px solid cadetblue;
+}
+
+
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: relative;
+   
+}
+
+.modal-content.confirmation {
+    text-align: center;
+}
+
+.modal-content.confirmation i {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #555;
+}
+
+/* Payment Options */
+.payment-options {
+    margin: 20px 0;
+}
+
+.payment-method {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+ color: black;
+}
+
+.payment-method input {
+    margin-right: 10px;
+color: black;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+
+/* Animation */
+
+/* Add these to your existing style.css file */
+
+/* ===== Enhanced Animations & Transitions ===== */
+/* General hover transitions */
+.btn, .laptop-card, .feature-card, .info-card, .category-card {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Cart container animations */
+.cart-sidebar {
+  transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.overlay {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Notification animation */
+.notification {
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Cart item animations */
+.cart-item {
+  transition: all 0.3s ease;
+  transform-origin: top;
+}
+
+.cart-item-enter {
+  opacity: 0;
+  transform: scale(0.8) translateX(20px);
+}
+
+.cart-item-enter-active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  transition: all 0.3s ease-out;
+}
+
+.cart-item-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cart-item-exit-active {
+  opacity: 0;
+  transform: scale(0.8) translateX(20px);
+  transition: all 0.3s ease-in;
+}
+
+/* Button pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-cart:hover, .checkout-btn:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Badge animation */
+.badge {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(42deg);
+  }
+  50% {
+    transform: rotate(38deg);
+  }
+}
+
+/* Cart count animation */
+.cart-count {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cart-icon:hover .cart-count {
+  transform: scale(1.2);
+  background-color: #ff4757;
+}
+
+/* Form input focus animation */
+.form-group input:focus, .form-group textarea:focus {
+  box-shadow: 0 2px 10px rgba(95, 191, 247, 0.3);
+}
+
+/* Enhanced dropdown animation */
+.nav-links li ul.dropdown {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Loading spinner for cart */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cart-loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+/* Checkout button loading state */
+.checkout-btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.checkout-btn.loading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+/* Modal animation */
+.modal {
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  animation: modalOpen 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Confirmation checkmark animation */
+@keyframes checkmark {
+  from {
+    stroke-dashoffset: 50;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.checkmark {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: checkmark 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* ===== Enhanced Cart Container Styles ===== */
+.cart-sidebar {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+  background: linear-gradient(to right, slategray, cadetblue);
+  color: white;
+  padding: 15px 20px;
+  margin: -20px -20px 20px -20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.cart-item {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.cart-summary {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-btn {
+  background: linear-gradient(to right, slategray, cadetblue);
+  box-shadow: 0 4px 15px rgba(47, 79, 79, 0.3);
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  box-shadow: 0 6px 20px rgba(47, 79, 79, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Quantity controls animation */
+.quantity-btn {
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* Remove button animation */
+.remove-item {
+  transition: all 0.3s ease;
+}
+
+.remove-item:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+/* Empty cart animation */
+.empty-cart {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for animations */
+@media (max-width: 768px) {
+  .cart-sidebar {
+    transition: right 0.3s ease;
+  }
+  
+  .laptop-card:hover {
+    transform: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-cart:hover, .checkout-btn:hover {
+    animation: none;
+  }
 }
