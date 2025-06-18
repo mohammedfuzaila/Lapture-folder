@@ -4,178 +4,483 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lapture-Laptop Company</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Login | Lapture Laptops</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Login Page Specific Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .login-container {
+      display: flex;
+      min-height: 100vh;
+      background: #f5f7fa;
+    }
+    
+    .login-left {
+      flex: 1;
+      background: linear-gradient(135deg, slategray 0%, cadetblue 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .login-left::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: pulse 15s infinite alternate;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.1; }
+      100% { transform: scale(1.2); opacity: 0.3; }
+    }
+    
+    .login-brand {
+     
+      z-index: 2;
+    }
+    
+    .login-brand img {
+     width: 50%;
+    }
+    
+    .login-features {
+      margin-top: 2rem;
+      z-index: 2;
+    }
+    
+    .login-feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeIn 0.5s forwards;
+      z-index: 2;
+    }
+    
+    .login-feature:nth-child(1) { animation-delay: 0.3s; }
+    .login-feature:nth-child(2) { animation-delay: 0.6s; }
+    .login-feature:nth-child(3) { animation-delay: 0.9s; }
+    
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    .login-feature i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: beige;
+    }
 
+    
+    .login-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    
+    .login-form-container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 3rem;
+      width: 100%;
+      max-width: 450px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .login-form-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, slategray, cadetblue);
+    }
+    
+    .login-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .login-header h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #16213e;
+    }
+    
+    .login-header p {
+      color: #6b7280;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #374151;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+    
+    .form-control:focus {
+      border-color:cadetblue;
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+      outline: none;
+    }
+    
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+      cursor: pointer;
+      color: #9ca3af;
+    }
+    
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .remember-me {
+      display: flex;
+      align-items: center;
+    }
+    
+    .remember-me input {
+      margin-right: 0.5rem;
+    }
+    
+    .forgot-password {
+      color: cadetblue;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .login-btn {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(to right, cadetblue, beige);
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .login-btn:hover {
+      background: linear-gradient(to right, beige, slategray);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+      transform: translateY(-2px);
+    }
+    
+    .social-login {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .social-login p {
+      color: #6b7280;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .social-login p::before,
+    .social-login p::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 30%;
+      height: 1px;
+      background: #e5e7eb;
+    }
+    
+    .social-login p::before {
+      left: 0;
+    }
+    
+    .social-login p::after {
+      right: 0;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-3px);
+    }
+    
+    .google {
+      background: #db4437;
+    }
+    
+    .facebook {
+      background: #4267B2;
+    }
+    
+    .apple {
+      background: #000000;
+    }
+    
+    .signup-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #6b7280;
+    }
+    
+    .signup-link a {
+      color: cadetblue;
+      text-decoration: none;
+      font-weight: 900;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+      }
+      
+      .login-left {
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+      
+      .login-feature {
+        justify-content: center;
+      }
+    }
+    
+    /* Particles */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .particle {
+      position: absolute;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+    }
+    
+    
+  </style>
 </head>
 
 <body>
-
-  <!-- navbar section -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Lapture</div>
-
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">☰</label>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li>
-          <a href="products.html">Products <span style="font-size: 0.8em;">▼</span></a>
-          <ul class="dropdown">
-            <li><a href="premium .html">Premium Laptops</a></li>
-            <li><a href="gaming.html">Gaming Laptops</a></li>
-            <li><a href="bussiness.html">Business Laptops</a></li>
-          </ul>
-        </li>
-
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- main section -->
-
-  <div class="container1">
-    <div class="vid">
-      <video autoplay muted loop src="img/intro.mp4"></video>
-    </div>
-    <div class="content">
-      <img src="img/lapture logo.png" alt="lapture laps">
-      <h1>LAPTURE LAPTOPS</h1>
-      <h3>Discover the perfect blend of performance and style with Lapture laptops.</h3>
-      <a href="#history"><button>Explore Now</button></a>
-    </div>
-
-  </div>
-  <!-- ===== Features Section ===== -->
-  <section class="features">
-    <h2>Why Choose Lapture?</h2>
-    <div class="feature-cards">
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-        <h3>Blazing Speed</h3>
-        <p>Powered by the latest processors for unmatched performance.</p>
+  <div class="login-container">
+    <!-- Left Side - Branding and Features -->
+    <div class="login-left">
+     
+      
+      <div class="login-brand">
+        <img src="#" alt="Lapture Logo">
+        <h1>Welcome Back</h1>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
-        <h3>Sleek Design</h3>
-        <p>Premium materials with a futuristic aesthetic.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fas fa-infinity"></i></div>
-        <h3>Long Battery</h3>
-        <p>All-day battery life for uninterrupted productivity.</p>
+      
+      <p>Sign in to access your personalized dashboard, track orders, and manage your Lapture account.</p>
+      
+      <div class="login-features">
+        <div class="login-feature">
+          <i class="fas fa-rocket"></i>
+          <div>
+            <h4>Premium Performance</h4>
+            <p>Access exclusive content for Lapture laptop owners</p>
+          </div>
+        </div>
+        
+        <div class="login-feature">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <h4>Secure Access</h4>
+            <p>Enterprise-grade security for your data</p>
+          </div>
+        </div>
+        
+        <div class="login-feature">
+          <i class="fas fa-cog"></i>
+          <div>
+            <h4>Device Management</h4>
+            <p>Control your Lapture devices from one place</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-
-
-  <!-- history section  -->
-  <div id="history">
-    <h1 class="title"><strong>Our Story</strong></h1>
-    <section class="about-hero">
-
-      <div class="about-image">
-        <video width="100%" height="80%" autoplay loop muted style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <source src="img/intro 7.mp4  " type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="about-content">
-
-        <p>Lapture Laptops was founded in 2025 and is more than just a brand — it’s a movement toward power, precision,
-          and purposeful design.
-          Crafted for creators, developers, professionals, and tech enthusiasts, Lapture brings cutting-edge innovation
-          wrapped in sleek, minimalist hardware.</p>
-
-        <p>From ultra-lightweight portability to performance machines that push boundaries, each Lapture device is
-          engineered to deliver blazing-fast speed, intelligent thermal management, and all-day battery life. With
-          premium
-          materials, modern aesthetics, and AI-enhanced computing, Lapture isn’t just built for today — it’s built for
-          what’s next.</p>
-
-      </div>
-    </section>
-
-
-    <section id="feature1" class="feature1">
-      <h1>Top Features</h1>
-      <ul>
-        <li>High-refresh rate displays (120Hz+)</li>
-        <li>Up to 18-hour battery life</li>
-        <li>Thermal cooling system 3.0</li>
-        <li>AI-optimized performance modes</li>
-        <li>Precision-engineered keyboard and trackpad</li>
-      </ul>
-    </section>
-  </div>
-
-
-
-
-
-  <!-- (Header, Hero, Sections remain unchanged) -->
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <h2>Lapture</h2>
-        <p><strong>Innovatings, Performance, Possibilities.</strong></p>
-        <p> Lapture Laptops are designed for modern users who demand power, style, and reliability. Whether
-          you're a gamer, a creator, a student, or a business professional.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-      </div>
-      <div class="footer-links">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="premium .html">Premium Laptops</a></li>
-          <li><a href="gaming.html">Gaming Laptops</a></li>
-          <li><a href="bussiness.html">Bussiness Laptops</a></li>
-        </ul>
-
-      </div>
-      <div class="footer-newsletter">
-        <h4>Subscribe</h4>
-        <form id="newsletterForm">
-          <input type="email" id="newsletterEmail" placeholder="Your email" required>
-          <button type="submit" onclick="subscrip()">Join</button>
+    
+    <!-- Right Side - Login Form -->
+    <div class="login-right">
+      <div class="login-form-container">
+        <div class="login-header">
+          <h2>Sign In</h2>
+          <p>Enter your credentials to access your lapture laptop account</p>
+        </div>
+        
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+            <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+          </div>
+          
+          <div class="remember-forgot">
+            <div class="remember-me">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          
+          <button type="submit" class="login-btn">Sign In</button>
+          
+          <div class="social-login">
+            <p>Or sign in with</p>
+            <div class="social-icons">
+              <div class="social-icon google">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="social-icon apple">
+                <i class="fab fa-apple"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="signup-link">
+            Don't have an account? <a href="home.html">Sign up</a>
+          </div>
         </form>
-        <p id="newsletterMessage" style="margin-top: 0.5rem;"></p>
       </div>
     </div>
-    <div class="footer-socials">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Lapture Laptops. All rights reserved. <br><strong>fuzailscript.in</strong></p>
-    </div>
-  </footer>
+  </div>
 
-
-
-
-<script src="script.js"></script>
+  <script>
+    // Toggle password visibility
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+    
+    togglePassword.addEventListener('click', function() {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.classList.toggle('fa-eye-slash');
+    });
+    
+    // Form submission with redirect to main page
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      // Basic validation
+      if(email && password) {
+        // In a real application, you would verify credentials with your server
+        // For this demo, we'll redirect after a brief delay to simulate processing
+        document.querySelector('.login-btn').textContent = 'Signing In...';
+        document.querySelector('.login-btn').disabled = true;
+        
+        setTimeout(() => {
+          window.location.href = "home.html"; // Redirect to main website page
+        }, 1000);
+      } else {
+        alert('Please enter both email and password');
+      }
+    });
+    
+    // Create particles
+    function createParticles() {
+      const particlesContainer = document.createElement('div');
+      particlesContainer.className = 'particles';
+      document.querySelector('.login-left').appendChild(particlesContainer);
+      
+      for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        const size = Math.random() * 5 + 2;
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        const opacity = Math.random() * 0.5 + 0.1;
+        const delay = Math.random() * 5;
+        const duration = Math.random() * 10 + 10;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.top = `${posY}%`;
+        particle.style.opacity = opacity;
+        particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
+    
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      createParticles();
+    });
+  </script>
 </body>
 
 </html>
